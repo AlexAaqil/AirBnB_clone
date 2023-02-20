@@ -33,11 +33,6 @@ body {
     justify-self: center;
 }
 
-*:focus-visible{
-    outline-style: dashed;
-    outline-width: 2px;
-}
-
 @media (max-width: 480px) {
     html {
         height: 100%;
