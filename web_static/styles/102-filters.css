@@ -8,6 +8,7 @@
     border: 1px solid #DDDDDD;
     border-radius: 4px;
     align-items: center;
+    margin-top: 15px;
 }
 
 .filters > button {
@@ -17,14 +18,13 @@
     right: 30px;
     font-size: var(--font-large);
     color: #FFFFFF;
-    background: #A30005;
+    background: #FF5A5F;
     border: none;
     border-radius: 4px;
 }
 
-.filters > button:hover,
-.filters > button:focus {
-    opacity: 0.5;
+.filters > button:hover {
+    opacity: 0.9;
 }
 
 .filters > *:first-child {
@@ -37,9 +37,9 @@
     position: relative;
     width: 25%;
     height: 100%;
-    grid-template-rows: 1fr 1fr;
-    align-items: center;
+    grid-template-rows: calc(50% - 10px) calc(50% - 10px);
     padding-left: 30px;
+    align-items: center;
 }
 
 .filters > .locations > h3,
@@ -51,7 +51,6 @@
 .filters > .locations > h4,
 .filters > .amenities > h4 {
     font-weight: 400;
-    font-size: var(--font-small);
     margin: 0;
 }
 
@@ -60,7 +59,7 @@
     display: none;
     position: absolute;
     width: calc(100% - 60px - 2 * 1px);
-    top: 54px;
+    top: 62px;
     list-style-type: none;
     background: #FAFAFA;
     border: 1px solid #DDDDDD;
@@ -72,11 +71,6 @@
 .filters > .locations:hover > .popover,
 .filters > .amenities:hover > .popover,
 .popover:hover {
-    display: block;
-}
-
-.filters > .locations:focus-within > .popover,
-.filters > .amenities:focus-within > .popover {
     display: block;
 }
 
